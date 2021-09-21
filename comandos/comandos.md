@@ -8,12 +8,11 @@
 **Cambiar directorio** | `cd *dir*` | `cd *dir*` | `cd *dir*`
 **Crear archivo vacio** | | `touch` | `ni`
 **Crear archivo con texto** | `echo *texto* > *archivo*` | `echo *texto* > *archivo*` | `ac`
-**Borrar archivo** | `del` | `rm` | `rm`
-**Renombrar archivo** | `mv` | `mv` | `rni`
-**Mover archivo** | `mv` | `mv` | `mv`
-**Copiar archivo** | `copy` | `cp` | `ci`
 **Crear carpeta** | `mkdir` | `mkdir` | `mkdir`
+**Borrar archivo** | `del` | `rm` | `rm`
 **Borrar carpeta** | `rmdir /s` | `rm -r` | `rmdir`
+**Renombrar archivo** | `mv` | `mv` | `rni`
 **Renombrar carpeta** | `move` | `mv` | `rni`
-**Mover carpeta** | `m̀ove` | `mv` | `mv`
+**Mover archivo/carpeta** | `move` | `mv` | `mv`
+**Copiar archivo** | `copy` | `cp` | `ci`
 **Copiar carpeta** | `Xcopy /E /I` | `cp -r` | `ci`
