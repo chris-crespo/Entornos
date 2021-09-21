@@ -1,14 +1,48 @@
-# Comandos
+COMANDOS (MSDOS)
 
-&nbsp; | MS-DOS | LINUX | POWERSHELL  
--| - | - | - 
-**Ver contenido de una carpeta** | ```dir``` | ```ls <dir>``` | ```ls <dir>```
-**Ver contenido filtrado** | ```dir /A-[DRHS]``` | ```ls <dir> \| grep <patron>``` |
-**Posición actual** | ```cd``` | ```pwd``` | ```pwd```
-**Cambiar directorio** | ```cd <dir>``` | ```cd <dir>``` | ```cd <dir>```
-**Crear archivo vacio** | | ```touch <archivo>``` | ```ni <archivo>```
-**Crear archivo con texto** | ```echo <texto> > <archivo>``` | ```
+echo texto > archivo 	- Crea un nuevo archivo con el texto introducido
+mkdir <dirs...> 	- Crea directorios
+cd 			- Muestra directorio actual
+cd <dir> 		- Baja al directorio
+cd ../<dir> 		- Sube al directio
+del <archivos...> 	- Elimina los archivos
+rmdir . /s /q 2>nul	- Elimina el contenido del directorio actual
+rmdir /s <dir>		- Elimina el directorio junto a su contenido
+dir 			- Muestra el contenido del directorio actual
+dir /B			- Muestra el contenido excluyend '.' y '..'
+dir /A-[DRHS]		- Filtra el contenido por Directorios, Solo Lectura, Ocultos o Systema
+move 			- mueve los archivos al directorio inidicado
+move <dir> <dir> 	- Cambia el nombre del directorio
+copy			- Copio uno o varios archivos al directorio indicado
 
 
+COMANDOS (LINUX)
 
+touch <archivo> 	- Crea un archivo nuevo
+echo "..." > <archivo>  - Escribe a un archivo, creándolo si no existe.
+mkdir <dir> 		- Crea un directio nuevo
+cd <dir> 		- Cambia de directorio
+rm <archivo> 		- Elimina el archivo
+rm <dir>/* 		- Elimina unicamente el contenido del directorio
+rm -r <dir> 		- Elimina el directorio
+ls 			- Muestra el contenido del directorio actual
+ls -p <dir> | grep -v /	- Muestra unicamente los archivos del directorio
+ls -d 			- Muestra solo los directorios dentro del directorio actual
+mv <antiguo> <nuevo> 	- Cambia el nombre del archivo
+mv <archivo|dir> <dir> 	- Mueve el archivo/directorio al directorio
+cp 			- Copia archivos o directorios al destino indicado
+
+
+COMMANDOS (POWERSHELL)
+
+ni <archivo>		- Crea archivo
+ac <archivo> contenido  - Escribe el contenido a un archivo
+del			- Elimina el archivo/directorio
+rni			- Cambia el nombre del archivo/directorio
+mkdir 			- Crea un directorio
+pwd			- Muestra dónde estamos
+cd <dir> 		- Cambia de directorio
+ls			- Muestra el contenido del directorio
+mv 			- Mueve archivos/directorios al destino
+cp			- Copia archivos/directorios al destino
 
